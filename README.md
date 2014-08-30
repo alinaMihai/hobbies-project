@@ -21,5 +21,5 @@ Features so far:
 
 This project makes use of the following technologies:
 - JQuery, JQuery-UI dialog, AJAX
-- PHP and MySQL
+- PHP and MySQL, MySQL Workbench
 - UIkit 
