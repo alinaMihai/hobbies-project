@@ -1,0 +1,177 @@
+/* 
+    Document   : main.css
+    Created on : Jul 24, 2014, 5:16:27 PM
+    Author     : Alina
+    Description:
+        Purpose of the stylesheet follows.
+*/
+h2.toggleBooks{
+	cursor: pointer;
+}
+input[type="radio"]:checked+span { font-weight: bold; }
+html, body {
+	width: 100%;
+	height: 100%;
+}
+#footer{
+	padding-top:20px;
+	padding-bottom: 20px;
+}	    
+a:hover{
+	text-decoration: none;
+}
+a:hover h3{
+	font-size:20px;
+	font-weight: bold;
+}
+ul.books_list li,ul.films_list li{
+	float: left;
+	padding: 10px;
+}
+ul.books_list li img, ul.films_list li img{
+	position: relative;
+	float: left;
+	width: 140px;
+	height: 190px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imagedropshadow {
+	padding: 5px;
+	border: solid 1px #EFEFEF; 
+} 
+a:hover img.imagedropshadow{
+	border: solid 1px #CCC; 
+	-moz-box-shadow: 1px 1px 5px #999; 
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999; 
+}
+/*a.boxLink:hover  {
+	border: solid 1px #CCC; 
+	-moz-box-shadow: 1px 1px 5px #999; 
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 5px #999; 
+}*/
+a.boxLink{
+	text-decoration: none;
+	color:black;
+	font-size: 12px;
+}
+a.boxLink:hover{
+	font-weight: bold;
+}
+/*#booksHeader{
+	margin: 0 auto;
+	width: 1200px;
+	text-align: center;
+}*/
+img.bookCover {
+	padding:10px;
+	margin:10px;
+	width:100px;
+	height: 150px;
+	display:block;
+	margin:auto;
+}
+img.editCover{
+	padding:0;
+	width:70px;
+	height: 100px;
+	/*	display:block;
+		margin-left: auto;
+		margin-right: auto;*/
+}
+span.deleteBook a{
+	text-decoration: none;
+	color:black;
+}
+span.deleteBook a:hover,div.edit:hover{
+	-moz-box-shadow: 1px 1px 5px #999; 
+	-webkit-box-shadow: 1px 1px 5px #999;
+	box-shadow: 1px 1px 15px #999; 
+}
+span.deleteBook{
+	position: absolute;
+	right:10px;
+	top:10px;
+	font-weight: bold;
+	cursor: pointer;
+}
+span.stars, span.stars span  {
+	display: block;
+	background: url('../media/images/stars.png') 0 -16px repeat-x;
+	width: 80px;
+	height: 16px;
+}
+
+span.stars span {
+	background-position: 0 0;
+}
+div.priority, div.ratingPosition{
+	position: absolute;
+	right:50px;
+	top:190px;
+}
+div.comment,div.review{
+	margin-top:20px;
+	padding:5px;                       
+	overflow-y: scroll;
+	overflow: -moz-scrollbars-vertical;
+	width:280px;
+	height:80px;
+}
+div.edit{
+	position: absolute;
+	right:30px;
+	top:11px;
+	cursor: pointer;
+}
+
+/*rating css style sheet*/
+.rating {
+	cursor: pointer;
+	margin: 2em;
+	clear: both;
+	display: block;
+}
+.rating:after {
+	content: '.';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+	visibility: hidden;
+}
+.cancel,
+.star {
+	float: left;
+	width: 17px;
+	height: 15px;
+	overflow: hidden;
+	text-indent: -999em;
+	cursor: pointer;
+}
+.cancel,
+.cancel a {background: url(../media/images/delete.gif) no-repeat 0 -16px;}
+
+.star,
+.star a {background: url(../media/images/star.gif) no-repeat 0 0px;}
+
+.cancel a,
+.star a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-position: 0 0px;
+}
+
+div.rating div.on a {
+	background-position: 0 -16px;
+}
+div.rating div.hover a,
+div.rating div a:hover {
+	background-position: 0 -32px;
+}
+
+
