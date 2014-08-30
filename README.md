@@ -13,6 +13,7 @@ Features so far:
 - Filtering feature, allowing the user to see his read/on whilist/all books using AJAX , PHP and JS
 - User personal main page
 - CRUD functionality for user books
+- The user can undo a book delete within a limited amount of time, after which the book is permanently deleted from the db
 - User can upload book covers
 - Uses uikit modal component to edit a book
 - Uses jQuery UI dialog to add a new book
